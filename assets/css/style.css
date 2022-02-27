@@ -1,5 +1,5 @@
 /* ----------- FONTS -----------*/
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto+Serif&display=swap');
 
 body {
     box-sizing: border-box;
@@ -11,6 +11,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Roboto Serif', sans-serif;
 }
 .header-section > h1, a {
     text-align: center;
@@ -26,7 +27,6 @@ body {
 #header-text:hover {
  color: #E5E4DC;
 }
-
 
 /* ------------- Main setup for the game layout ------------ */
 
