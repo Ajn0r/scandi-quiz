@@ -74,6 +74,6 @@ body {
     color: #467599;
 }
 /* ------------ Hidden elements ------------ */
-.about, .finished-game, #start {
+.hide {
     display: none;
 }
