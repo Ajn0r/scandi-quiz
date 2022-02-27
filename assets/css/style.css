@@ -16,17 +16,24 @@ body {
 
 .game-layout {
     max-width: 70%;
+    height: 70vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
-
-
-
-.about {
+/* ------------ Score & question tracker ------------ */
+#score {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+/* ------------ Hidden elements ------------ */
+.about, .finished-game {
     display: none;
 }
