@@ -15,7 +15,7 @@ body {
 /* ------------- Main setup for the game layout ------------ */
 
 .game-layout {
-    max-width: 70%;
+    max-width: 60%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ body {
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 0.2rem;
 }
 
 /* ------------ Score & question tracker ------------ */
@@ -35,10 +35,22 @@ body {
 /* ------------ Question area ------------ */
 #questions {
     font-size: 120%;
-    padding: 2rem 0;
+    padding: 2rem 0 4rem 0;
 }
 /* ------------ Answer area ------------ */
+#answers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.answer-btn {
+    width: 100%;
+    font-size: 130%;
+    border-radius: 0.4rem;
+    background-color: lightblue;
+    padding: 0.5rem;
 
+}
 /* ------------ Hidden elements ------------ */
 .about, .finished-game {
     display: none;
