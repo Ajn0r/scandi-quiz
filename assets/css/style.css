@@ -31,8 +31,14 @@ body {
 #score {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 1rem;
 }
+/* ------------ Question area ------------ */
+#questions {
+    font-size: 120%;
+    padding: 2rem 0;
+}
+/* ------------ Answer area ------------ */
+
 /* ------------ Hidden elements ------------ */
 .about, .finished-game {
     display: none;
