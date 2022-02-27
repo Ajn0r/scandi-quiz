@@ -6,6 +6,7 @@ const mainGameSection = document.getElementById('main-game');
 const howToPage = document.getElementById('about');
 const howToButton = document.getElementById('how-to-btn');
 
+
 startButton.addEventListener('click', startQuiz);
 header.addEventListener('click', startOver);
 howToButton.addEventListener('click', howToPlay);
@@ -22,7 +23,15 @@ function startQuiz () {
 function startOver () {
     startPage.className.remove('hide');
 }
+
+/**
+ * Function that takes the player to the How to play section, hiding all other sections.
+ */
 function howToPlay () {
     mainGameSection.classList.add('hide');
     howToPage.classList.remove('hide');
 }
+
+
+
+// Trying out code under here
