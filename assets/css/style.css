@@ -1,3 +1,6 @@
+/* ----------- FONTS -----------*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
 body {
     box-sizing: border-box;
     padding: 0;
@@ -13,8 +16,17 @@ body {
     text-align: center;
     margin: 0 auto;
     padding: 3rem;
-    font-size: 150%;
+    font-size: 200%;
+    font-family: 'Lobster Two', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    color: #1A2B38;
 }
+#header-text:hover {
+ color: #E5E4DC;
+}
+
 
 /* ------------- Main setup for the game layout ------------ */
 
@@ -29,6 +41,7 @@ body {
     border: 1px solid black;
     border-radius: 1rem;
     padding: 1rem 0.2rem;
+    background-color: rgba(185, 184, 201, 0.7);
 }
 
 /* ------------ Score & question tracker ------------ */
