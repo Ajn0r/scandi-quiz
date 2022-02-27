@@ -16,7 +16,7 @@ body {
 
 .game-layout {
     max-width: 60%;
-    height: 70vh;
+    max-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,9 +47,13 @@ body {
     width: 100%;
     font-size: 130%;
     border-radius: 0.4rem;
-    background-color: lightblue;
+    background-color: #467599;
+    color: #E5E4DC;
     padding: 0.5rem;
-
+}
+.answer-btn:hover {
+    background-color: #E5E4DC;
+    color: #467599;
 }
 /* ------------ Hidden elements ------------ */
 .about, .finished-game {
