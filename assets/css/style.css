@@ -32,12 +32,13 @@ body {
 
 .game-layout {
     max-width: 60%;
-    max-height: 70vh;
+    max-height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 2rem;
     border: 1px solid black;
     border-radius: 1rem;
     padding: 1rem;
@@ -76,4 +77,24 @@ body {
 /* ------------ Hidden elements ------------ */
 .hide {
     display: none;
+}
+
+/* ----------- About area ------------ */
+#about {
+    overflow: scroll;
+    padding: 2rem;
+}
+
+/* ----------- Media ------------- */
+@media screen and (min-width: 400px) {
+    .header-section > h1, a {
+        font-size: 170%;
+    }
+    .game-layout {
+        max-height: 65%;
+        min-height: 50%;
+    }
+    #start {
+        padding-top: 3rem;
+    }
 }
