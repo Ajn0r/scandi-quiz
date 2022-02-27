@@ -60,7 +60,8 @@ body {
     flex-direction: column;
     width: 100%;
 }
-.answer-btn {
+/* ----------- Style for buttons ----------- */
+.btn {
     width: 100%;
     font-size: 130%;
     border-radius: 0.4rem;
@@ -68,11 +69,11 @@ body {
     color: #E5E4DC;
     padding: 0.5rem;
 }
-.answer-btn:hover {
+.btn:hover {
     background-color: #E5E4DC;
     color: #467599;
 }
 /* ------------ Hidden elements ------------ */
-.about, .finished-game {
+.about, .finished-game, #start {
     display: none;
 }
