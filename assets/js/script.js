@@ -44,10 +44,11 @@ function goToContact() {
 
     // -------- JavaScript for displaying quiz here ---------
 const questionBox = document.getElementById('questions');
+
 function showQuestion () {
-    for (let i = 0; i < questions.length; i++) 
+    for (let question of questions) 
     {
-    questionBox.innerHTML = questions[i].question;
+        questionBox.innerHTML = question.question;
     }
 }
 
