@@ -20,6 +20,7 @@ contactBtn.addEventListener('click', goToContact);
 function startQuiz () {
     startPage.classList.add('hide');
     quiz.classList.remove('hide');
+    showQuestion();
 }
 /**
  * Function that takes the player back to the first start 'page' when header is clicked
@@ -42,3 +43,12 @@ function goToContact() {
     }
 
     // -------- JavaScript for displaying quiz here ---------
+const questionBox = document.getElementById('questions');
+function showQuestion () {
+    for (let i = 0; i < questions.length; i++) 
+    {
+    questionBox.innerHTML = questions[i].question;
+    }
+}
+
+ 
