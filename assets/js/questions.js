@@ -120,10 +120,28 @@ const questions = [
     {
         question: "In Norway, they have a saying that Norwegians was born with this on their feet:",
         answer: [
-            {text: "18 hours", correct: false},
-            {text: "22 hours", correct: false},
-            {text: "30 hours", correct: true},
-            {text: "74 hours", correct: false},
+            {text: "Skiis", correct: true},
+            {text: "Warm socks", correct: false},
+            {text: "Runningshoes", correct: false},
+            {text: "Hiking boots", correct: false},
+        ]
+    },
+    {
+        question: "Which is the highest mountain in Scandinavia?",
+        answer: [
+            {text: "Galdhøpiggen, Norway", correct: true},
+            {text: "Kebnekaise, Sweden", correct: false},
+            {text: "Glittertind, Norway", correct: false},
+            {text: "Sarektjåkkå", correct: false},
+        ]
+    },
+    {
+        question: "This Danish city is home to the biggest festivals in Scandinavia:",
+        answer: [
+            {text: "Copenhagen", correct: false},
+            {text: "Aarhus", correct: false},
+            {text: "Nyborg", correct: false},
+            {text: "Roskilde", correct: true},
         ]
     },
 ]
