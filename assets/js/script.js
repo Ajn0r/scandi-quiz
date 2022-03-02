@@ -1,5 +1,4 @@
 // ------- JavaScript for games first page ------------
-
 const quiz = document.getElementById('game-area');
 const startPage = document.getElementById('start');
 const startButton = document.getElementsByClassName('play-btn');
@@ -56,4 +55,7 @@ function showQuestion () {
     }
 }
 
- 
+//function shuffleQuestions () {}
+//function displayAnswers () {}
+//function calculateRightAnswer () {}
+//function displayNextQuestion () {}
