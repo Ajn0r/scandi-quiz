@@ -2,14 +2,16 @@
 
 const quiz = document.getElementById('game-area');
 const startPage = document.getElementById('start');
-const startButton = document.getElementById('play-btn');
+const startButton = document.getElementsByClassName('play-btn');
 const header = document.getElementById('header-text');
 const mainGameSection = document.getElementById('main-game');
 const howToPage = document.getElementById('about');
 const howToButton = document.getElementById('how-to-btn');
 const contactBtn = document.getElementById('contact-btn');
 
-startButton.addEventListener('click', startQuiz);
+for (let playBtn of startButton) {
+    playBtn.addEventListener('click', startQuiz);
+}
 header.addEventListener('click', startOver);
 howToButton.addEventListener('click', howToPlay);
 contactBtn.addEventListener('click', goToContact); 
@@ -18,7 +20,9 @@ contactBtn.addEventListener('click', goToContact);
  * Function for starting the quiz, adding the hide class to first section and displaying quiz section.
  */
 function startQuiz () {
+    mainGameSection.classList.remove('hide');
     startPage.classList.add('hide');
+    howToPage.classList.add('hide');
     quiz.classList.remove('hide');
     showQuestion();
 }

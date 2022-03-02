@@ -136,7 +136,7 @@ const questions = [
         ]
     },
     {
-        question: "This Danish city is home to the biggest festivals in Scandinavia:",
+        question: "This Danish city is home to the biggest festival in Scandinavia:",
         answer: [
             {text: "Copenhagen", correct: false},
             {text: "Aarhus", correct: false},
