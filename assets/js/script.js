@@ -47,15 +47,24 @@ function goToContact() {
 
     // -------- JavaScript for displaying quiz here ---------
 const questionBox = document.getElementById('questions');
-
+const answerOption = document.getElementsByClassName('answer-btn');
+let answersBox = document.getElementById('answers');
 function showQuestion () {
-    for (let question of questions) 
-    {
-        questionBox.innerHTML = question.question;
+    for (let i = 0; i < questions.length; i ++) {
+        questionBox.innerHTML = questions[i].question;
+   
+        answersBox.innerHTML = 
+        `<button id="answer-btn-1" class="btn answer-btn">${questions[i].answer[0].text}</button>
+        <button id="answer-btn-1" class="btn answer-btn">${questions[i].answer[1].text}</button>
+        <button id="answer-btn-1" class="btn answer-btn">${questions[i].answer[2].text}</button>
+        <button id="answer-btn-1" class="btn answer-btn">${questions[i].answer[3].text}</button>
+        `
     }
 }
-
 //function shuffleQuestions () {}
-//function displayAnswers () {}
+
+function displayAnswers () {
+  
+}
 //function calculateRightAnswer () {}
 //function displayNextQuestion () {}
