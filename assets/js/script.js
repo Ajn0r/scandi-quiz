@@ -61,6 +61,7 @@ function showQuestion () {
         `
     }
 }
+
 //function shuffleQuestions () {}
 
 function displayAnswers () {
