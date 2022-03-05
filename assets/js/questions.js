@@ -85,7 +85,7 @@ const questions = [
         question: "The largest city in Scandinavia is this one:",
         answer: [
             {text: "Stockholm", correct: true},
-            {text: "Gothenburg", correct: true},
+            {text: "Gothenburg", correct: false},
             {text: "Copenhagen", correct: false},
             {text: "Oslo", correct: false},
         ]

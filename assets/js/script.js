@@ -85,7 +85,7 @@ function clearStatusClass (element) {
 }
 
 function displayNextQuestion() {
-    if (currentQuestionIndex <= 5) {
+    if (currentQuestionIndex <= 7) {
     resetQuestion();
     showQuestion(shuffledQuestion[currentQuestionIndex]);
     }
