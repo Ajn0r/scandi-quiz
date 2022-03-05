@@ -27,12 +27,10 @@ body {
 #header-text:hover {
  color: #E5E4DC;
 }
-
 /* ------------- Main setup for the game layout ------------ */
-
 .game-layout {
     max-width: 60%;
-    max-height: 50%;
+    max-height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,13 +51,14 @@ body {
 /* ------------ Question area ------------ */
 #questions {
     font-size: 120%;
-    padding: 2rem 0 4rem 0;
+    padding: 2rem 0;
 }
 /* ------------ Answer area ------------ */
 #answers {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 0.5rem;
 }
 /* ----------- Style for buttons ----------- */
 .btn {
@@ -70,10 +69,32 @@ body {
     color: #E5E4DC;
     padding: 0.5rem;
 }
-
+#next-btn {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 200%;
+    width: fit-content;
+    font-weight: bold;
+}
 .btn-hover:hover {
     background-color: #E5E4DC;
     color: #467599;
+}
+
+
+/* ------------ Styles for choosen answers ----------- */
+.selected {
+    border: 4px solid #1A2B38;
+}
+.correct {
+    background-color: rgb(115, 163, 115);
+}
+.wrong {
+    background-color: #c76060;
+}
+.fas {
+    float: left;
+
 }
 /* ------------ Hidden elements ------------ */
 .hide {
@@ -85,12 +106,6 @@ body {
     overflow: scroll;
     padding: 2rem;
 }
-.correct {
-    background-color: green;
-}
-.wrong {
-    background-color: red;
-}
 
 /* ----------- Media ------------- */
 @media screen and (min-width: 400px) {
@@ -98,7 +113,7 @@ body {
         font-size: 170%;
     }
     .game-layout {
-        max-height: 65%;
+        max-height: 90%;
         min-height: 50%;
     }
     #start {

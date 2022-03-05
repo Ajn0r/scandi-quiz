@@ -63,6 +63,7 @@ function calcualateAnswer (event) {
 function selectAnswer (e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
+    selectedButton.classList.add('selected');
     if (correct){
         score ++;
         scoreTracker.innerHTML = score;
