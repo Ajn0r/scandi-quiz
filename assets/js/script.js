@@ -1,7 +1,6 @@
-// ------- The basic code for the quiz is from Web Dev Simplified YouTube,
+// ------- The basic JavaScript code structure for the quiz is from Web Dev Simplified YouTube,
 // ------- 
 // -------
-
 const quiz = document.getElementById('game-area');
 const startPage = document.getElementById('start');
 const startButton = document.getElementsByClassName('play-btn');
@@ -13,8 +12,7 @@ const howToButton = document.getElementById('how-to-btn').addEventListener('clic
 const contactBtn = document.getElementById('contact-btn').addEventListener('click', goToContact);
 
 
-const shuffledQuestion = '';
-const currentQuestionIndex = '';
+let shuffledQuestion, currentQuestionIndex;
 
 for (let playBtn of startButton) {
     playBtn.addEventListener('click', startQuiz);
@@ -27,30 +25,35 @@ function startQuiz () {
     mainGameSection.classList.remove('hide');
     startPage.classList.add('hide');
     howToPage.classList.add('hide');
+    shuffledQuestion = questions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
     quiz.classList.remove('hide');
-    showQuestion();
+    displayNextQuestion();
 }
 function selectAnswer () {
 }
 
-function displayNextQuestion () {}
-/*
+function displayNextQuestion() {
+    showQuestion(shuffledQuestion[currentQuestionIndex]);
+}
+
 // -------- JavaScript for displaying quiz here ---------
 const questionBox = document.getElementById('questions');
 let answersBox = document.getElementById('answers');
-function showQuestion () {
-    for (let i = 0; i < questions.length; i ++) {
-        questionBox.innerHTML = questions[i].question;
+
+function showQuestion (question) {
+    //for (let i = 0; i < questions.length; i ++) {
+        questionBox.innerHTML = question.question;
    
         answersBox.innerHTML = 
-        `<button id="answer-btn-1" class="btn answer-btn">${questions[i].answer[0].text}</button>
-        <button id="answer-btn-1" class="btn answer-btn">${questions[i].answer[1].text}</button>
-        <button id="answer-btn-1" class="btn answer-btn">${questions[i].answer[2].text}</button>
-        <button id="answer-btn-1" class="btn answer-btn">${questions[i].answer[3].text}</button>
+        `<button id="answer-btn-1" class="btn answer-btn">${question.answer[0].text}</button>
+        <button id="answer-btn-1" class="btn answer-btn">${question.answer[1].text}</button>
+        <button id="answer-btn-1" class="btn answer-btn">${question.answer[2].text}</button>
+        <button id="answer-btn-1" class="btn answer-btn">${question.answer[3].text}</button>
         `
-    }
+ //   }
 }
-*/
+
 
 //function shuffleQuestions () {}
 
