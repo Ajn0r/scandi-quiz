@@ -11,6 +11,7 @@ const header = document.getElementById('header-text').addEventListener('click', 
 const howToButton = document.getElementById('how-to-btn').addEventListener('click', howToPlay);
 const contactBtn = document.getElementById('contact-btn').addEventListener('click', goToContact);
 const endGamePage = document.getElementById('end-game');
+const goBackButton = document.getElementById('take-me-back').addEventListener('click', startOver);
 let scoreTracker = document.getElementById('score-count');
 let questionCounter = document.getElementById('question-count');
 let score = 0;
@@ -152,7 +153,10 @@ function resetQuestion () {
  * Function that takes the player back to the first start 'page' when header is clicked
  */
  function startOver () {
-    startPage.className.remove('hide');
+    mainGameSection.classList.remove('hide');
+    startPage.classList.remove('hide');
+    quiz.classList.add('hide');
+    endGamePage.classList.add('hide');
 }
 /**
  * Function that takes the player to the How to play section, hiding all other sections.
