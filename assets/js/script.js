@@ -60,12 +60,9 @@ function calcualateAnswer (event) {
 function selectAnswer (e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
-    //My code
     if (correct){
         scoreTracker.innerHTML ++;
     }
-    //Not my code
-    setStatusClass(correct)
     Array.from(answersBox.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
     })
