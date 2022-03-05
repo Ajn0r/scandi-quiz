@@ -13,8 +13,6 @@ const contactBtn = document.getElementById('contact-btn').addEventListener('clic
 
 let scoreTracker = document.getElementById('score-count');
 let questionCounter = document.getElementById('question-count');
-let avalableQuestions = questions;
-let currentQuestion = {};
 
 let shuffledQuestion, currentQuestionIndex;
 
@@ -38,6 +36,7 @@ function startQuiz () {
     quiz.classList.remove('hide');
     displayNextQuestion();
 }
+/*
 function calcualateAnswer (event) {
     const selectedAnswer = event.target;
     for (let i = 0; i < questions.length; i++) {
@@ -51,10 +50,11 @@ function calcualateAnswer (event) {
         
     //Maybe add a function that does this
     setStatusClass(buttons, correctAnswer);
-     /*   */
+    
         nextButton.classList.remove('hide');
 }
 }
+*/
 
 
 function selectAnswer (e) {
@@ -71,6 +71,7 @@ function selectAnswer (e) {
     })
     nextButton.classList.remove('hide');
 }
+
 function setStatusClass (element, correct) {
     clearStatusClass(element)
     if (correct) {
@@ -108,9 +109,9 @@ function showQuestion (question) {
         button.innerText = answer.text;
         button.classList.add('btn');
         if (answer.correct) {  
-            button.correct = answer.correct;
+            button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', calcualateAnswer);
+        button.addEventListener('click', selectAnswer);
         answersBox.appendChild(button);
     });
 
