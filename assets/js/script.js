@@ -10,7 +10,7 @@ const nextButton = document.getElementById('next-btn');
 const header = document.getElementById('header-text').addEventListener('click', startOver);
 const howToButton = document.getElementById('how-to-btn').addEventListener('click', howToPlay);
 const contactBtn = document.getElementById('contact-btn').addEventListener('click', goToContact);
-
+const endGamePage = document.getElementById('end-game');
 let scoreTracker = document.getElementById('score-count');
 let questionCounter = document.getElementById('question-count');
 
@@ -31,6 +31,7 @@ function startQuiz () {
     mainGameSection.classList.remove('hide');
     startPage.classList.add('hide');
     howToPage.classList.add('hide');
+    endGamePage.classList.add('hide');
     shuffledQuestion = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     quiz.classList.remove('hide');
@@ -90,8 +91,14 @@ function displayNextQuestion() {
     showQuestion(shuffledQuestion[currentQuestionIndex]);
     }
     else {
-        // Code for when game is finished!
+        finishedGame();
     }
+}
+
+function finishedGame () {
+    mainGameSection.classList.add('hide');
+    endGamePage.classList.remove('hide');
+
 }
 
 // -------- JavaScript for displaying quiz here ---------
