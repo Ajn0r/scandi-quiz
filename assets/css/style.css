@@ -16,7 +16,7 @@ body {
 .header-section > h1, a {
     text-align: center;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 2.5rem;
     font-size: 200%;
     font-family: 'Lobster Two', sans-serif;
     font-weight: bold;
@@ -27,10 +27,11 @@ body {
 #header-text:hover {
  color: #E5E4DC;
 }
+
 /* ------------- Main setup for the game layout ------------ */
 .game-layout {
     max-width: 60%;
-    max-height: fit-content;
+    max-height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +82,6 @@ body {
     color: #467599;
 }
 
-
 /* ------------ Styles for choosen answers ----------- */
 .selected {
     border: 4px solid #1A2B38;
@@ -94,7 +94,6 @@ body {
 }
 .fas {
     float: left;
-
 }
 /* ------------ Hidden elements ------------ */
 .hide {
@@ -113,7 +112,7 @@ body {
         font-size: 170%;
     }
     .game-layout {
-        max-height: 90%;
+        max-height: 65%;
         min-height: 50%;
     }
     #start {

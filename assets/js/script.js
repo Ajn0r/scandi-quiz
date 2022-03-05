@@ -1,5 +1,4 @@
-// ------- The basic JavaScript code structure for the quiz is from Web Dev Simplified YouTube,
-// ------- 
+// ------- The basic JavaScript code structure for the quiz is from Web Dev Simplified YouTube, see credits in Readme.
 // -------
 const quiz = document.getElementById('game-area');
 const startPage = document.getElementById('start');
@@ -12,6 +11,7 @@ const howToButton = document.getElementById('how-to-btn').addEventListener('clic
 const contactBtn = document.getElementById('contact-btn').addEventListener('click', goToContact);
 const endGamePage = document.getElementById('end-game');
 const goBackButton = document.getElementById('take-me-back').addEventListener('click', startOver);
+
 let scoreTracker = document.getElementById('score-count');
 let questionCounter = document.getElementById('question-count');
 let score = 0;
@@ -39,26 +39,6 @@ function startQuiz () {
     quiz.classList.remove('hide');
     displayNextQuestion();
 }
-/*
-function calcualateAnswer (event) {
-    const selectedAnswer = event.target;
-    for (let i = 0; i < questions.length; i++) {
-        buttons = answersBox.children[i];
-        if (selectedAnswer) {
-            buttons.classList.add('correct');
-        }
-        else {
-            buttons.classList.add('wrong');
-        }
-        
-    //Maybe add a function that does this
-    setStatusClass(buttons, correctAnswer);
-    
-        nextButton.classList.remove('hide');
-}
-}
-*/
-
 
 function selectAnswer (e) {
     const selectedButton = e.target;
@@ -90,11 +70,17 @@ function setStatusClass (element, correct) {
     }
 }
 
+/**
+ * Removes the correct and wrong class from answer buttons
+ */
 function clearStatusClass (element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
 
+/**
+ * Function that displays the next question, until it reaches question 8.
+ */
 function displayNextQuestion() {
     if (currentQuestionIndex <= 7) {
     resetQuestion();
@@ -105,6 +91,9 @@ function displayNextQuestion() {
     }
 }
 
+/**
+ * Function that displays the finished game content, and letting the player know how they got on.
+ */
 function finishedGame () {
     let endScore = document.getElementById('end-score');
     let resultEvaluation = document.getElementById('result-evaluation');
@@ -149,9 +138,11 @@ function showQuestion (question) {
         button.addEventListener('click', selectAnswer);
         answersBox.appendChild(button);
     });
-
 }
 
+/**
+ * Function that reset the question, and hiding the next button.
+ */
 function resetQuestion () {
     nextButton.classList.add('hide');
     while (answersBox.firstChild) {
