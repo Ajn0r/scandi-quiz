@@ -58,7 +58,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 0.5rem;
+    gap: 0.2rem;
 }
 /* ----------- Style for buttons ----------- */
 .btn {
@@ -67,7 +67,7 @@ body {
     border-radius: 0.4rem;
     background-color: #467599;
     color: #E5E4DC;
-    padding: 0.5rem;
+    padding: 0.7rem;
 }
 #next-btn {
     margin-top: 1rem;
