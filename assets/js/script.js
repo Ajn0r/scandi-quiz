@@ -1,4 +1,7 @@
-// ------- JavaScript for games first page ------------
+// ------- The basic code for the quiz is from Web Dev Simplified YouTube,
+// ------- 
+// -------
+
 const quiz = document.getElementById('game-area');
 const startPage = document.getElementById('start');
 const startButton = document.getElementsByClassName('play-btn');
@@ -8,6 +11,7 @@ const howToPage = document.getElementById('about');
 const header = document.getElementById('header-text').addEventListener('click', startOver);
 const howToButton = document.getElementById('how-to-btn').addEventListener('click', howToPlay);
 const contactBtn = document.getElementById('contact-btn').addEventListener('click', goToContact);
+
 
 const shuffledQuestion = '';
 const currentQuestionIndex = '';
