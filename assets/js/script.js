@@ -6,17 +6,23 @@ const startPage = document.getElementById('start');
 const startButton = document.getElementsByClassName('play-btn');
 const mainGameSection = document.getElementById('main-game');
 const howToPage = document.getElementById('about');
-
+const nextButton = document.getElementById('next-btn');
 const header = document.getElementById('header-text').addEventListener('click', startOver);
 const howToButton = document.getElementById('how-to-btn').addEventListener('click', howToPlay);
 const contactBtn = document.getElementById('contact-btn').addEventListener('click', goToContact);
 
+let scoreTracker = document.getElementById('score-count');
+let questionCounter = document.getElementById('question-count');
 
 let shuffledQuestion, currentQuestionIndex;
 
 for (let playBtn of startButton) {
     playBtn.addEventListener('click', startQuiz);
 }
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex ++;
+    displayNextQuestion();
+})
 
 /**
  * Function for starting the quiz, adding the hide class to first section and displaying quiz section.
@@ -30,35 +36,88 @@ function startQuiz () {
     quiz.classList.remove('hide');
     displayNextQuestion();
 }
-function selectAnswer () {
+function calcualateAnswer (event) {
+    const selectedAnswer = event.target;
+    questions.forEach(correct => {
+        buttons = answersBox.children;
+        if (selectedAnswer === true) {
+                buttons.classList.add('correct');
+            }
+        else {
+                buttons.classList.add('wrong');
+        }
+    });
+
+        nextButton.classList.remove('hide');
+}
+
+
+
+function selectAnswer (e) {
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    //My code
+    if (correct){
+        scoreTracker.innerHTML ++;
+    }
+    //Not my code
+    setStatusClass(correct)
+    Array.from(answersBox.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct);
+    })
+    nextButton.classList.remove('hide');
+}
+function setStatusClass (element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct');
+    }
+    else {
+        element.classList.add('wrong')
+    }
+}
+
+function clearStatusClass (element) {
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
 }
 
 function displayNextQuestion() {
+    if (currentQuestionIndex <= 5) {
+    resetQuestion();
     showQuestion(shuffledQuestion[currentQuestionIndex]);
+    }
+    else {
+        // Code for when game is finished!
+    }
 }
 
 // -------- JavaScript for displaying quiz here ---------
 const questionBox = document.getElementById('questions');
-let answersBox = document.getElementById('answers');
+const answersBox = document.getElementById('answers');
 
-function showQuestion (question) {
-    //for (let i = 0; i < questions.length; i ++) {
-        questionBox.innerHTML = question.question;
-   
-        answersBox.innerHTML = 
-        `<button id="answer-btn-1" class="btn answer-btn">${question.answer[0].text}</button>
-        <button id="answer-btn-1" class="btn answer-btn">${question.answer[1].text}</button>
-        <button id="answer-btn-1" class="btn answer-btn">${question.answer[2].text}</button>
-        <button id="answer-btn-1" class="btn answer-btn">${question.answer[3].text}</button>
-        `
- //   }
+function showQuestion (question) { 
+    questionCounter.innerHTML ++;
+    questionBox.innerHTML = question.question;
+    question.answer.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
+        if (answer.correct) {  
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', calcualateAnswer);
+        answersBox.appendChild(button);
+    });
+
 }
 
-
-//function shuffleQuestions () {}
-
-
-//function calculateRightAnswer () {}
+function resetQuestion () {
+    nextButton.classList.add('hide');
+    while (answersBox.firstChild) {
+        answersBox.removeChild(answersBox.firstChild);
+    }
+}
 
 /**
  * Function that takes the player back to the first start 'page' when header is clicked

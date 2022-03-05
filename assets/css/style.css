@@ -84,6 +84,12 @@ body {
     overflow: scroll;
     padding: 2rem;
 }
+.correct {
+    background-color: green;
+}
+.wrong {
+    background-color: red;
+}
 
 /* ----------- Media ------------- */
 @media screen and (min-width: 400px) {
