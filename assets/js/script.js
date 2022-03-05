@@ -13,6 +13,7 @@ const contactBtn = document.getElementById('contact-btn').addEventListener('clic
 const endGamePage = document.getElementById('end-game');
 let scoreTracker = document.getElementById('score-count');
 let questionCounter = document.getElementById('question-count');
+let score = 0;
 
 let shuffledQuestion, currentQuestionIndex;
 
@@ -62,7 +63,8 @@ function selectAnswer (e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
     if (correct){
-        scoreTracker.innerHTML ++;
+        score ++;
+        scoreTracker.innerHTML = score;
     }
     Array.from(answersBox.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
@@ -96,8 +98,26 @@ function displayNextQuestion() {
 }
 
 function finishedGame () {
+    let endScore = document.getElementById('end-score');
+    let resultEvaluation = document.getElementById('result-evaluation');
+    endScore.innerHTML = score;
     mainGameSection.classList.add('hide');
     endGamePage.classList.remove('hide');
+
+    if (score > 7) 
+    {
+        resultEvaluation.innerHTML = `
+        <p>Whooow! Thats some awesome scores there, you must be a true Scandi!</p>`
+    }
+    else if (score > 5) {
+        resultEvaluation.innerHTML = `
+        <p>Not to shabby!</p>`
+    }
+    else {
+        resultEvaluation.innerHTML = `
+        <p>Awww! Don't be sad, try again, maybe the questions will be easier this time.</p>`
+    }
+    
 
 }
 
