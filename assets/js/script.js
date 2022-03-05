@@ -77,11 +77,14 @@ function setStatusClass (element, correct) {
     clearStatusClass(element)
     
     if (correct) {
+        element.innerHTML += ` <i class="fas fa-check"></i>`;
         element.classList.add('correct');
         element.classList.remove('btn-hover');
+        
     }
     else {
-        element.classList.add('wrong')
+        element.innerHTML += ` <i class="fas fa-times-circle"></i>`;
+        element.classList.add('wrong');
         element.classList.remove('btn-hover');
     }
 }
