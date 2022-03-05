@@ -125,6 +125,9 @@ function finishedGame () {
         resultEvaluation.innerHTML = `
         <p>Awww! Don't be sad, try again, maybe the questions will be easier this time.</p>`
     }
+    scoreTracker.innerHTML = 0;
+    questionCounter.innerHTML = 0;
+    score = 0;
 
 }
 
