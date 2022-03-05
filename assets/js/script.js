@@ -75,11 +75,14 @@ function selectAnswer (e) {
 
 function setStatusClass (element, correct) {
     clearStatusClass(element)
+    
     if (correct) {
         element.classList.add('correct');
+        element.classList.remove('btn-hover');
     }
     else {
         element.classList.add('wrong')
+        element.classList.remove('btn-hover');
     }
 }
 
@@ -108,17 +111,16 @@ function finishedGame () {
     if (score > 7) 
     {
         resultEvaluation.innerHTML = `
-        <p>Whooow! Thats some awesome scores there, you must be a true Scandi!</p>`
+        <p>Whooow! That's some awesome scores there, you must be a true Scandi!</p>`
     }
     else if (score > 5) {
         resultEvaluation.innerHTML = `
-        <p>Not to shabby!</p>`
+        <p>Not to shabby! You know a thing or two about Scandinavia!</p>`
     }
     else {
         resultEvaluation.innerHTML = `
         <p>Awww! Don't be sad, try again, maybe the questions will be easier this time.</p>`
     }
-    
 
 }
 
@@ -133,6 +135,7 @@ function showQuestion (question) {
         const button = document.createElement('button');
         button.innerText = answer.text;
         button.classList.add('btn');
+        button.classList.add('btn-hover');
         if (answer.correct) {  
             button.dataset.correct = answer.correct;
         }

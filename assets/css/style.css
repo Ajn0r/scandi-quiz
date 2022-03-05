@@ -70,7 +70,8 @@ body {
     color: #E5E4DC;
     padding: 0.5rem;
 }
-.btn:hover {
+
+.btn-hover:hover {
     background-color: #E5E4DC;
     color: #467599;
 }
