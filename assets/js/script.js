@@ -172,3 +172,14 @@ function howToPlay () {
 function goToContact() {
     window.location.href="contact.html";
 }
+
+// ------------ JavaScript for contact page -------------
+const submitButton = document.getElementById('submit').addEventListener('click', submitContactForm);
+function submitContactForm () {
+    console.log('clicked');
+    let contactPage = document.getElementById('contact-section');
+    contactPage.innerHTML = `
+    <h2>Thank you for getting in touch!</h2>
+    <p>We'll get back to you as soon as possible!</p>
+    <button href="index.html" class="btn">Go back</button>`;
+}
