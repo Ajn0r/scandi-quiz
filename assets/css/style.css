@@ -133,7 +133,10 @@ input, textarea, .submit {
     font-family: inherit;
 
 }
-
+.submit {
+    width: fit-content;
+    padding: 1rem;
+}
 
 /* ----------- Media ------------- */
 
