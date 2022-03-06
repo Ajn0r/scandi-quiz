@@ -3,7 +3,7 @@
 For the second Portfolio Project with Code Institute, I have created an online Quiz game about Scandinavia.
 The questions are about the Scandinavian countries, both geographically and some fun facts question in different difficulties.
 
-![amiresponsive-image](assets/documentation/amiresponsive.png)
+![amiresponsive-image](assets/documentation/amirespnew.png)
 
 
 For the live game please click [here](https://ajn0r.github.io/scandi-quiz/index.html)
@@ -116,10 +116,11 @@ The pages are laid out logically, making them easily navigated for the user.
 
 The contact page consists of a form where the user can get in touch with the owner of the quiz.
 
+![contact-page](assets/documentation/contactPage.png)
 
 It is an HTML form without a method, instead, have I used JavaScript to change the inner HTML once the user presses the submit button. 
 
-
+![contact-recived](assets/documentation/contactRecived.png)
 
 ## Wireframes
 
