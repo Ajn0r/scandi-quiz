@@ -12,7 +12,8 @@ Table of content.
 
 ## Who is the website for?
 	
-The quiz is for anybody that wants to play a quiz game, but it can also serve an educational purpose for anyone looking to learn a bit more about Scandinavia, or someone who is just a little curious about the Scandinavian countries
+The quiz is for anybody that wants to play an online quiz game for fun or to test their knowledge about Scandinavia.
+The game is also for those wanting to learn some fun facts about Scandinavia, or someone who is just a little curious about the Scandinavian countries.
 
 ## What does it do?
 
