@@ -6,7 +6,7 @@ The questions are about Scandinavia and the culture of the Scandinavian countrie
 
 Image here
 
-For the live site please click [here](https://ajn0r.github.io/adresshere/)
+For the live game please click [here](https://ajn0r.github.io/scandi-quiz/index.html)
 
 Table of content.
 
