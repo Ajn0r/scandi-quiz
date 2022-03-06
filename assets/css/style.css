@@ -5,7 +5,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background: url(../images/backgrounds_quiz-000.webp);
     background-position: center;
@@ -16,7 +16,7 @@ body {
 .header-section > h1, a {
     text-align: center;
     margin: 0 auto;
-    padding: 2.5rem;
+    padding: 2rem;
     font-size: 200%;
     font-family: 'Lobster Two', sans-serif;
     font-weight: bold;
@@ -30,15 +30,15 @@ body {
 
 /* ------------- Main setup for the game layout ------------ */
 .game-layout {
-    max-width: 60%;
-    max-height: 90%;
+    max-width: 70%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 2rem;
-    border: 1px solid black;
+    border: 2px solid #1A2B38;
     border-radius: 1rem;
     padding: 1rem;
     background-color: rgba(185, 184, 201, 0.7);
@@ -69,6 +69,7 @@ body {
     background-color: #467599;
     color: #E5E4DC;
     padding: 0.7rem;
+    margin: 0.1rem 0;
 }
 #next-btn {
     margin-top: 1rem;
@@ -104,7 +105,7 @@ body {
 #about {
     overflow: scroll;
     padding: 2rem;
-    max-height: 65%;
+    max-height: 65vh;
 }
 
 /* ------------ Contact page ------------ */
@@ -122,11 +123,26 @@ input, textarea, .submit {
 }
 
 /* ----------- Media ------------- */
-@media screen and (min-width: 400px) {
+
+@media screen and (max-width: 520px) {
     .header-section > h1, a {
-        font-size: 170%;
+        font-size: 160%;
+        padding: 1rem 0.2rem;
+    }
+    .game-layout {
+        max-width: 80%;
     }
     #start {
-        padding: 3rem;
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 330px) {
+    .header-section > h1, a {
+        font-size: 140%;
+    }
+    #score {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
     }
 }
