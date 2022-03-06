@@ -43,7 +43,7 @@ Table of content.
   * [Credits](#credits)
 
 ## Who is the website for?
-	
+  
 The quiz is for anybody that wants to play an online quiz game for fun or to test their knowledge about Scandinavia.
 The game is also for those wanting to learn some fun facts about Scandinavia, or someone who is just a little curious about the Scandinavian countries.
 
@@ -77,6 +77,7 @@ The player can not go forward with the quiz if they have not chosen an answer, o
 #### From a returning visitors perspective
 
 - As a returning player, I would like a variety of questions, so that it is not the same every time I play.
+- As a returning player, I want to send the maker of the quiz some feedback on the game.
 
 #### Returning visitor Fulfilment
 
