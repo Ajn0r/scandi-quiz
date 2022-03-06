@@ -24,9 +24,11 @@ body {
     font-style: italic;
     text-decoration: none;
     color: #1A2B38;
+    text-shadow: 2px 2px #E5E4DC;
 }
 #header-text:hover {
  color: #E5E4DC;
+ text-shadow: 2px 2px #1A2B38;
 }
 
 /* ------------- Main setup for the game layout ------------ */
@@ -103,10 +105,10 @@ body {
     border: 4px solid #1A2B38;
 }
 .correct {
-    background-color: rgb(115, 163, 115);
+    background-color: #77A677;
 }
 .wrong {
-    background-color: #c76060;
+    background-color: #C25B5B;
 }
 .fas {
     float: left;
@@ -142,7 +144,7 @@ input, textarea, .submit {
 
 @media screen and (max-width: 520px) {
     #header-text {
-        font-size: 160%;
+        font-size: 250%;
         padding: 1rem 0.2rem;
     }
     .game-layout {
@@ -153,9 +155,12 @@ input, textarea, .submit {
         padding: 1rem;
     }
 }
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 4){
+    
+}
+@media screen and (max-width: 372px) {
     #header-text {
-        font-size: 140%;
+        font-size: 180%;
     }
     #score {
         flex-direction: column;
