@@ -12,28 +12,41 @@
     <!-- Header section -->
     <section class="header-section">
         <h1><a href="index.html" id="header-text">The Scandi Quiz</a></h1>
-        </div>
     </section>
+
     <section class="game-layout" id="contact-section">
-        <div>
+        <div id="contact-text">
             <h2>Want to get in touch?</h2>
             <p>
                 Maybe you have a question? Or just want to give some feedback on the game? <br>
                 Fill in the form and we'll get back to you as soon as possible!
             </p>
         </div>
-        <form id="contact-form">
+        <form id="form">
             <label for="name">Name: </label>
             <input type="text" name="name" id="name" required>
             <label for="email">Email: </label>
             <input type="email" name="email" id="email" required>
             <textarea name="message" id="message" rows="10"></textarea>
-            <button class="btn btn-hover submit" id="submit">Submit</button>
+            <input type="submit" class="btn btn-hover submit" value="Submit">
         </form>
-
     </section>
-
+    
     <!-- JavaScript -->
+    <script>
+        const contactPage = document.getElementById('contact-section');
+        const myForm = document.getElementById('form');
+        const back = document.getElementById('go-back');
+            myForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            let username = document.getElementById('name').value;
+            contactPage.innerHTML = `
+            <h2>Thank you ${username} for reaching out!</h2>
+            <p>We'll get back to you in no time!</p>
+            <button class="btn btn-hover"><a href="index.html">Go back</a></button>`;
+        });
+
+    </script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/questions.js"></script>
 </body>

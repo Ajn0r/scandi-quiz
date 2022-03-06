@@ -6,9 +6,9 @@ const startButton = document.getElementsByClassName('play-btn');
 const mainGameSection = document.getElementById('main-game');
 const howToPage = document.getElementById('about');
 const nextButton = document.getElementById('next-btn');
-const header = document.getElementById('header-text').addEventListener('click', startOver);
-const howToButton = document.getElementById('how-to-btn').addEventListener('click', howToPlay);
-const contactBtn = document.getElementById('contact-btn').addEventListener('click', goToContact);
+document.getElementById('header-text').addEventListener('click', startOver);
+document.getElementById('how-to-btn').addEventListener('click', howToPlay);
+document.getElementById('contact-btn').addEventListener('click', goToContact);
 const endGamePage = document.getElementById('end-game');
 const goBackButton = document.getElementById('take-me-back').addEventListener('click', startOver);
 
@@ -24,7 +24,7 @@ for (let playBtn of startButton) {
 nextButton.addEventListener('click', () => {
     currentQuestionIndex ++;
     displayNextQuestion();
-})
+});
 
 /**
  * Function for starting the quiz, adding the hide class to first section and displaying quiz section.
@@ -50,12 +50,12 @@ function selectAnswer (e) {
     }
     Array.from(answersBox.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-    })
+    });
     nextButton.classList.remove('hide');
 }
 
 function setStatusClass (element, correct) {
-    clearStatusClass(element)
+    clearStatusClass(element);
     
     if (correct) {
         element.innerHTML += ` <i class="fas fa-check"></i>`;
@@ -104,15 +104,15 @@ function finishedGame () {
     if (score > 7) 
     {
         resultEvaluation.innerHTML = `
-        <p>Whooow! That's some awesome scores there, you must be a true Scandi!</p>`
+        <p>Whooow! That's some awesome scores there, you must be a true Scandi!</p>`;
     }
     else if (score > 5) {
         resultEvaluation.innerHTML = `
-        <p>Not to shabby! You know a thing or two about Scandinavia!</p>`
+        <p>Not to shabby! You know a thing or two about Scandinavia!</p>`;
     }
     else {
         resultEvaluation.innerHTML = `
-        <p>Awww! Don't be sad, try again, maybe the questions will be easier this time.</p>`
+        <p>Awww! Don't be sad, try again, maybe the questions will be easier this time.</p>`;
     }
     scoreTracker.innerHTML = 0;
     questionCounter.innerHTML = 0;
@@ -174,12 +174,3 @@ function goToContact() {
 }
 
 // ------------ JavaScript for contact page -------------
-const submitButton = document.getElementById('submit').addEventListener('click', submitContactForm);
-function submitContactForm () {
-    console.log('clicked');
-    let contactPage = document.getElementById('contact-section');
-    contactPage.innerHTML = `
-    <h2>Thank you for getting in touch!</h2>
-    <p>We'll get back to you as soon as possible!</p>
-    <button href="index.html" class="btn">Go back</button>`;
-}
