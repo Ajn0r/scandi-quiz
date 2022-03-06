@@ -16,7 +16,9 @@ The quiz is for anybody that wants to play a quiz game, but it can also serve an
 
 ## What does it do?
 
-The quiz displays a question and lets the player choose from 4 different answers. If the player is correct the answer box will light up in green, if the answer is wrong the answer will light up in red and the right answer can be viewed. The player then can go to the next question. If the user tries to go to the next question without choosing an answer, an error message will display, letting them know they need to choose an answer first.
+The quiz displays a question and lets the player choose from 4 different answers. The user then can choose the answer they believe is right, the correct answer will change background color to green, and all the wrong answers will turn red. The user can see which answer they chose from the border around it. If the player is correct he or she will be given a point, adding it to the score tracker above the question. The player can also see which question they are on.
+
+The player can not go forward with the quiz if they have not chosen an answer, only once they have done that will the next button appears and they can move on to the next question.
 
 ## User Experience
 
@@ -55,13 +57,15 @@ The project includes several features:
 
 ### Structure
 
-- The website consists of an of total $ different pages and $ different menu options.
-
+- The website consists of an of total $ different pages
 The pages are laid out logically, making them easily navigated for the user.
 
 #### First page / Home page
 
-- The home page consists of a background image and a welcome phrase, with a link that invites the user to play the game. The first page serves as a landing page.
+- The home page consists of a background image and a menu with three alternatives.
+- Play
+- How to play
+- Contact
 
 #### Game page
 
