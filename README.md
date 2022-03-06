@@ -1,108 +1,176 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Scandi Quiz
 
-Welcome Ajn0r,
+For the second Portfolio Project with Code Institute, I have created an online Quiz game about Scandinavia.
+The questions are about Scandinavia and the culture of the Scandinavian countries.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Image here
 
-## Gitpod Reminders
+For the live site please click [here](https://ajn0r.github.io/adresshere/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Table of content.
 
-`python3 -m http.server`
+## Who is the website for?
+	
+The quiz is for anybody that wants to play a quiz game, but it can also serve an educational purpose for anyone looking to learn a bit more about Scandinavia, or someone who is just a little curious about the Scandinavian countries
 
-A blue button should appear to click: _Make Public_,
+## What does it do?
 
-Another blue button should appear to click: _Open Browser_.
+The quiz displays a question and lets the player choose from 4 different answers. If the player is correct the answer box will light up in green, if the answer is wrong the answer will light up in red and the right answer can be viewed. The player then can go to the next question. If the user tries to go to the next question without choosing an answer, an error message will display, letting them know they need to choose an answer first.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## User Experience
 
-A blue button should appear to click: _Make Public_,
+### User Goals
 
-Another blue button should appear to click: _Open Browser_.
+- The website must be responsive, so that the quiz can be played on a range of screen sizes, from mobile to extra-large screens.
+- The site is to serve as a fun game and also 
+- 
+- 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### User stories
 
-To log into the Heroku toolbelt CLI:
+#### From a first-time visitors perspective
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- As a user, I want to easily find information on how to play the game
+- As a user, I want to be able to see my score and know how I’m getting on
+- As a user, I want to know which question I am on, and how many are left.
+- As a first time user 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+#### First-time visitor perspective Fulfilment
 
-## Release History
+#### From a returning visitors perspective
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Returning visitor Fulfilment
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Features
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The project includes several features:
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- $ pages in total
+- $ different menu options
+- One contact form
+- A scorekeeping function
+- A function keeping track of which question the user is on.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Structure
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- The website consists of an of total $ different pages and $ different menu options.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+The pages are laid out logically, making them easily navigated for the user.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### First page / Home page
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- The home page consists of a background image and a welcome phrase, with a link that invites the user to play the game. The first page serves as a landing page.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### Game page
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+-  The Game page is where the user can play the quiz game
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+#### About page
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- The about page lets the user know some information about the game, how to play it etc.... 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Contact page
 
-------
+The contact page consists of a form where the user can get in touch with the maker of the quiz
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Wireframes
 
-**How will this affect me?**
+Wireframes were made for each of the pages, both for desktop and mobile.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Color & Fonts
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Colors
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+I have found the colors for the website on Coolors.co
 
-**So….?**
+### Fonts
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+I have found my fonts on Google Font, the ones that I finally decided to use are:
+-	«Lobster Two» for the header text
+-	«Roboto Sans» for all other text.
 
-**Can I opt out?**
+## Media
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Features I would like to implement in the future
+-	A high score feature.
+-	More questions
+-	Displaying images as part of a question
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Testing
 
-**Anything more?**
+### Browser testing
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Browsers that the website has been tested on:
 
----
+- Google Chrome
+- Windows Edge
+- Safari
+- Firefox
 
-Happy coding!
+#### Issues
+
+### Lighthouse
+
+
+### Validators
+
+The W3C Markup Validator and W3C CSS validator Services have been used to validate each page of the website to ensure no errors in the code.
+
+The Markup Validator did however find one error in the index.html, it was a stray div closing tag. I removed it and the code then passed without any more errors.
+
+The CSS passed without any errors on the first attempt.
+
+### Local testing
+
+### Responsiveness
+
+
+#### Issues discovered
+
+
+## Deployment
+
+The website was deployed using GitHub pages
+
+While in the repository, I clicked on settings
+
+![settings](assets/documentation/settings.png)
+
+Then onto pages in the sidebar
+
+![choose pages](assets/documentation/choose-branch.png)
+
+From here I selected the main branch under the Source section and clicked save
+
+![source](assets/documentation/main-branch-save.png)
+
+The site was deployed!
+
+![deployed site](assets/documentation/deployed-site.png)
+
+## Technologies and resources used
+
+I have used:
+
+- HTML5 for markup
+- CSS3 for style
+- Google Fonts for fonts
+- Birme for image resizing and changing the format
+- Coolors.co for colors
+- Font Awesome for icons
+- Favicon.io for the favicon
+- Git for version control
+- GitHub for keeping the files, documents, and deployment of the site
+- W3 School
+- Code Institute course material
+- Code Institute Slack channel
+
+## Credits
+- I have used 
+Web Dev Simplified YouTube video «Build A Quiz App with JavaScript» for the basic setup for the quiz.
+Link to video here
