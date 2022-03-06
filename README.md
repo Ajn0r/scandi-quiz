@@ -1,7 +1,7 @@
 # The Scandi Quiz
 
 For the second Portfolio Project with Code Institute, I have created an online Quiz game about Scandinavia.
-The questions are about Scandinavia and the culture of the Scandinavian countries.
+The questions are about the Scandinavian countries, both geographically and some fun facts question in different difficulties.
 
 ![amiresponsive-image](assets/documentation/amiresponsive.png)
 
@@ -26,9 +26,10 @@ The player can not go forward with the quiz if they have not chosen an answer, o
 ### User Goals
 
 - The website must be responsive, so that the quiz can be played on a range of screen sizes, from mobile to extra-large screens.
-- The site is to serve as a fun game and also 
-- 
-- 
+- The game should be a fun quiz, but also for those who would like to test their knowledge with a range of different questions.
+- The quiz must be easily navigated.
+- The right and wrong answers should be clearly displayed for the player.
+- The player must be able to keep track of their score.
 
 ### User stories
 
