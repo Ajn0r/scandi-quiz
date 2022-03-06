@@ -162,9 +162,19 @@ Browsers that the website has been tested on:
 
 The W3C Markup Validator and W3C CSS validator Services have been used to validate each page of the website to ensure no errors in the code.
 
-The Markup Validator did however find one error in the index.html, it was a stray div closing tag. I removed it and the code then passed without any more errors.
+![htmlcheck](assets/documentation/htmlcheckcontactok.png)
+
+The Markup Validator did however find one error in the index.html, it was a stray div closing tag.
+
+![htmlcheckerror](assets/documentation/htmlcheckdiverror.png)
+
+I removed it and the code then passed without any more errors.
+
+![htmlcheckokej](assets/documentation/htmlcheckok.png)
 
 The CSS passed without any errors on the first attempt.
+
+![]
 
 ### Local testing
 
@@ -197,13 +207,15 @@ I have used:
 - HTML5 for markup
 - CSS3 for style
 - Google Fonts for fonts
-- Birme for image resizing and changing the format
+- Birme for image resizing and changing the format of background image
 - Coolors.co for colors
 - Font Awesome for icons
 - Favicon.io for the favicon
 - Git for version control
 - GitHub for keeping the files, documents, and deployment of the site
 - W3 School
+- [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) 
+- Grammarly for grammar check
 - Code Institute course material
 - Code Institute Slack channel
 
