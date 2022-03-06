@@ -139,25 +139,21 @@ The CSS passed without any errors on the first attempt.
 #### Issues discovered
 
 
+
 ## Deployment
 
 The website was deployed using GitHub pages
 
-While in the repository, I clicked on settings
-
-![settings](assets/documentation/settings.png)
-
+While in the repository, I clicked on settings.
 Then onto pages in the sidebar
 
-![choose pages](assets/documentation/choose-branch.png)
+![choose pages](assets/documentation/githubpages.png)
 
-From here I selected the main branch under the Source section and clicked save
+From here I selected the main branch under the Source section and clicked save.
 
-![source](assets/documentation/main-branch-save.png)
+![GitHub pages Branch](assets/documentation/githubpagesbranch.png)
 
-The site was deployed!
-
-![deployed site](assets/documentation/deployed-site.png)
+The game was deployed!
 
 ## Technologies and resources used
 
