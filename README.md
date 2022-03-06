@@ -93,21 +93,23 @@ The project includes several features:
 
 ### Structure
 
-- The website consists of an of total $ different pages
-The pages are laid out logically, making them easily navigated for the user.
+- The game consists of an of total 2 different html pages, with several sections on the index.html page.
+- The sections are then hidden or shown with the help from JavaScript, adding and removing classes.
 
-#### First page / Home page
+The sections and pages are laid out logically, making them easily navigated for the user.
+
+#### First page / Menu section
 
 - The home page consists of a background image and a menu with three alternatives.
 - Play
 - How to play
 - Contact
 
-#### Game page
+#### Game section
 
 -  The Game page is where the user can play the quiz game
 
-#### About page
+#### About section
 
 - The about page lets the user know some information about the game, how to play it etc.... 
 

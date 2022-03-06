@@ -112,6 +112,7 @@ body {
     padding: 1rem 2rem;
     font-size: 170%;
     margin: 0 auto;
+    box-shadow: 2px 2px #1A2B38;
 }
 
 #go-back-link {
