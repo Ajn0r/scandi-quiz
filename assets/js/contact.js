@@ -1,7 +1,9 @@
+
 const contactPage = document.getElementById('contact-section');
-const myForm = document.getElementById('form');
+const contactForm = document.getElementById('form');
 const back = document.getElementById('go-back');
-    myForm.addEventListener('submit', (event) => {
+
+contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
     let username = document.getElementById('name').value;
     contactPage.innerHTML = `

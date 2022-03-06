@@ -117,7 +117,6 @@ function finishedGame () {
     scoreTracker.innerHTML = 0;
     questionCounter.innerHTML = 0;
     score = 0;
-
 }
 
 // -------- JavaScript for displaying quiz here ---------
