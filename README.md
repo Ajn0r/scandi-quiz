@@ -67,15 +67,16 @@ The player can not go forward with the quiz if they have not chosen an answer, o
 
 #### From a first-time visitors perspective
 
-- As a user, I want to easily find information on how to play the game
-- As a user, I want to be able to see my score and know how I’m getting on
-- As a user, I want to know which question I am on, and how many are left.
-- As a first time user 
-
+- As a first-time player, I want to easily find information on how to play the game.
+- As a first-time player, I want to be able to see my score and know how I’m getting on.
+- As a first-time player, I want to know which question I am on, and how many are left.
+- As a first-time player, I would like to know which answers are correct and incorrect once I have given my answer. 
 
 #### First-time visitor perspective Fulfilment
 
 #### From a returning visitors perspective
+
+- As a returning player, I would like a variety of questions, so that it is not the same every time I play.
 
 #### Returning visitor Fulfilment
 
@@ -83,8 +84,8 @@ The player can not go forward with the quiz if they have not chosen an answer, o
 
 The project includes several features:
 
-- $ pages in total
-- $ different menu options
+- 2 HTML pages, 3 JavaScript files and one CSS file.
+- 3 different menu options
 - One contact form
 - A scorekeeping function
 - A function keeping track of which question the user is on.
