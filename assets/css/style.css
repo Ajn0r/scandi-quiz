@@ -13,11 +13,12 @@ body {
     background-size: cover;
     font-family: 'Roboto Serif', sans-serif;
 }
-.header-section > h1, a {
+
+#header-text {
+    display: block;
     text-align: center;
-    margin: 0 auto;
     padding: 2rem;
-    font-size: 200%;
+    font-size: 250%;
     font-family: 'Lobster Two', sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -30,7 +31,7 @@ body {
 
 /* ------------- Main setup for the game layout ------------ */
 .game-layout {
-    max-width: 70%;
+    max-width: 37rem;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -42,6 +43,7 @@ body {
     border-radius: 1rem;
     padding: 1rem;
     background-color: rgba(185, 184, 201, 0.7);
+    font-family: inherit;
 }
 
 /* ------------ Score & question tracker ------------ */
@@ -70,6 +72,7 @@ body {
     color: #E5E4DC;
     padding: 0.7rem;
     margin: 0.1rem 0;
+    font-family: inherit;
 }
 #next-btn {
     margin-top: 1rem;
@@ -81,6 +84,18 @@ body {
 .btn-hover:hover {
     background-color: #E5E4DC;
     color: #467599;
+}
+.go-back-btn {
+    width: fit-content;
+    padding: 1rem 2rem;
+    font-size: 170%;
+    
+}
+#go-back-link {
+    width: fit-content;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
 }
 
 /* ------------ Styles for choosen answers ----------- */
@@ -115,6 +130,8 @@ input, textarea, .submit {
     margin: 0.5rem;
     border-radius: 0.5rem;
     border: 2px solid #1A2B38;
+    font-family: inherit;
+
 }
 .submit {
     width: fit-content;
