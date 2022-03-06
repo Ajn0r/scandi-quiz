@@ -25,7 +25,7 @@ Table of content.
       - [About page](#about-page)
       - [Contact page](#contact-page)
   * [Wireframes](#wireframes)
-    + [Color & Fonts](#color---fonts)
+  * [Color & Fonts](#colors-and-fonts)
     + [Colors](#colors)
     + [Fonts](#fonts)
   * [Media](#media)
@@ -123,7 +123,7 @@ It is an HTML form without a method, instead, have I used JavaScript to change t
 
 Wireframes were made for each of the pages, both for desktop and mobile.
 
-### Color & Fonts
+## Colors and Fonts
 
 ### Colors
 
