@@ -127,7 +127,8 @@ Wireframes were made for each of the pages, both for desktop and mobile.
 
 ### Colors
 
-I have found the colors for the game on Coolors.co
+I have found the colors for the game on Coolors.co.
+
 The first three are the colors used for the overall style of the game. The green and red colors are for the answers, to display the correct and incorrect answers visibly. 
 
 ![Coolors](assets/documentation/scandicoolors.png)
