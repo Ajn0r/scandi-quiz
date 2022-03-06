@@ -131,6 +131,7 @@ input, textarea, .submit {
     }
     .game-layout {
         max-width: 80%;
+        margin-top: 4rem;
     }
     #start {
         padding: 1rem;
