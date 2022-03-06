@@ -3,8 +3,8 @@
 For the second Portfolio Project with Code Institute, I have created an online Quiz game about Scandinavia.
 The questions are about Scandinavia and the culture of the Scandinavian countries.
 
+![amiresponsive-image](assets/documentation/amiresponsive.png)
 
-Image here
 
 For the live game please click [here](https://ajn0r.github.io/scandi-quiz/index.html)
 
