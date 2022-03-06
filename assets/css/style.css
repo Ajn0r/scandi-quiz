@@ -1,6 +1,6 @@
 /* ----------- FONTS -----------*/
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto+Serif&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto+Serif&display=swap');
 body {
     box-sizing: border-box;
     padding: 0;
@@ -14,6 +14,9 @@ body {
     font-family: 'Roboto Serif', sans-serif;
 }
 
+
+/* ------------ Styles for 'header' ---------- */
+
 #header-text {
     display: block;
     text-align: center;
@@ -26,12 +29,15 @@ body {
     color: #1A2B38;
     text-shadow: 2px 2px #E5E4DC;
 }
+
 #header-text:hover {
- color: #E5E4DC;
- text-shadow: 2px 2px #1A2B38;
+    color: #E5E4DC;
+    text-shadow: 2px 2px #1A2B38;
 }
 
+
 /* ------------- Main setup for the game layout ------------ */
+
 .game-layout {
     max-width: 40rem;
     height: fit-content;
@@ -46,24 +52,35 @@ body {
     background-color: rgba(185, 184, 201, 0.7);
 }
 
+
 /* ------------ Score & question tracker ------------ */
+
 #score {
     display: flex;
     justify-content: space-between;
 }
+
+
 /* ------------ Question area ------------ */
+
 #questions {
     font-size: 120%;
     padding: 2rem 0;
 }
+
+
 /* ------------ Answer area ------------ */
+
 #answers {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 0.2rem;
 }
+
+
 /* ----------- Style for buttons ----------- */
+
 .btn {
     width: 100%;
     font-size: 150%;
@@ -75,6 +92,7 @@ body {
     font-weight: 500;
     box-shadow: 2px 2px #1A2B38;
 }
+
 #next-btn {
     margin-top: 1rem;
     padding: 1rem 2rem;
@@ -82,61 +100,79 @@ body {
     width: fit-content;
     font-weight: bold;
 }
+
 .btn-hover:hover {
     background-color: #E5E4DC;
     color: #467599;
     text-shadow: none;
 }
+
 .go-back-btn {
     width: fit-content;
     padding: 1rem 2rem;
     font-size: 170%;
     margin: 0 auto;
-    
 }
+
 #go-back-link {
     width: fit-content;
     text-decoration: none;
     color: inherit;
 }
 
+
 /* ------------ Styles for choosen answers ----------- */
+
 .selected {
     border: 4px solid #1A2B38;
 }
+
 .correct {
     background-color: #77A677;
 }
+
 .wrong {
     background-color: #C25B5B;
 }
+
 .fas {
     float: left;
 }
+
+
 /* ------------ Hidden elements ------------ */
+
 .hide {
     display: none;
 }
 
+
 /* ----------- About area ------------ */
+
 #about {
     overflow: scroll;
     padding: 2rem;
     max-height: 65vh;
 }
 
+
 /* ------------ Contact page ------------ */
-input, textarea, .submit {
+
+input,
+textarea,
+.submit {
     width: 90%;
     padding: 0.5rem;
     margin: 0.5rem;
     border-radius: 0.5rem;
     border: 2px solid #1A2B38;
 }
+
 .submit {
     width: fit-content;
     padding: 1rem;
 }
+
 
 /* ----------- Media ------------- */
 
