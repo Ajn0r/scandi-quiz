@@ -80,7 +80,10 @@ The pages are laid out logically, making them easily navigated for the user.
 
 #### Contact page
 
-The contact page consists of a form where the user can get in touch with the maker of the quiz
+The contact page consists of a form where the user can get in touch with the owner of the quiz.
+
+
+It is an HTML form without a method, instead, have I used JavaScript to change the inner HTML once the user presses the submit button. 
 
 
 
