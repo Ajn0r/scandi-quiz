@@ -98,12 +98,14 @@ The project includes several features:
 
 The sections and pages are laid out logically, making them easily navigated for the user.
 
-#### First page / Menu section
+#### Menu section
 
-- The home page consists of a background image and a menu with three alternatives.
-- Play
-- How to play
-- Contact
+- The home page consists of a background image of the Swedish Arcipelago and a menu with three alternatives.
+  - Play
+  - How to play
+  - Contact
+
+![Menu-options](assets/documentation/quizstart.png)
 
 #### Game section
 
