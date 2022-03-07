@@ -74,6 +74,11 @@ The player can not go forward with the quiz if they have not chosen an answer, o
 
 #### First-time visitor perspective Fulfilment
 
+- A first-time player can easily find information about how to play by choosing the menu option "how to play".
+There the player is provided with instructions, then invited to play the game by clicking on the button "Let's go!"
+
+![howtoplayVideo](assets/documentation/ezgif.com-gif-maker.gif)
+
 #### From a returning visitors perspective
 
 - As a returning player, I would like a variety of questions, so that it is not the same every time I play.
