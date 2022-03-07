@@ -80,7 +80,12 @@ There the player is provided with instructions, then invited to play the game by
 ![howtoplayVideo](assets/documentation/ezgif.com-gif-maker.gif)
 
 - The player can see their score at the top of the game area.
+
 ![follow-score](assets/documentation/seeScore.png)
+
+- The player can see and follow along on the blabla
+
+![follow-question](assets/documentation/seeQuestion.png)
 
 #### From a returning visitors perspective
 
