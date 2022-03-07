@@ -132,6 +132,10 @@ Wireframes were made using Balsamiq Wireframes
 
 ![phone-wireframes](assets/documentation/phonewiref.png)
 
+- Desktop 
+
+![Desktop-wireframes](assets/documentation/desktopWireframe.png)
+
 ## Colors and Fonts
 
 ### Colors
