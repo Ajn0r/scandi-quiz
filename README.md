@@ -128,9 +128,18 @@ All buttons on the page change color if the player hover over them.
 
 -  The Game page is where the user can play the quiz game
 
-#### About section
+#### How to play section
 
-- The about page lets the user know some information about the game, how to play it etc.... 
+- The how to play section lets the player know how the game is played, it's also where information about the game can be found if the player is curious.
+
+- The section is reached by clicking on the "how to play" button on the first page.
+
+![howtoplayhover](assets/documentation/howToPlayHover.png)
+
+- The player can then scroll down on the information.
+Once the player is finished reading, they can decide if they'd like to play straight away or go back to the main menu by clicking on the logo.
+
+![about-video](assets/documentation/about.gif)
 
 
 #### Contact page
