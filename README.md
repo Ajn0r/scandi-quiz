@@ -79,6 +79,9 @@ There the player is provided with instructions, then invited to play the game by
 
 ![howtoplayVideo](assets/documentation/ezgif.com-gif-maker.gif)
 
+- The player can see their score at the top of the game area.
+![follow-score](assets/documentation/seeScore.png)
+
 #### From a returning visitors perspective
 
 - As a returning player, I would like a variety of questions, so that it is not the same every time I play.
