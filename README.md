@@ -107,6 +107,10 @@ The sections and pages are laid out logically, making them easily navigated for 
 
 ![Menu-options](assets/documentation/quizstart.png)
 
+All buttons on the page change color if the player hover over them.
+
+![hovered-buttons](assets/documentation/buttonHovered.png)
+
 #### Game section
 
 -  The Game page is where the user can play the quiz game
