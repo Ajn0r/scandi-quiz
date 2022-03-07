@@ -83,7 +83,7 @@ There the player is provided with instructions, then invited to play the game by
 
 ![follow-score](assets/documentation/seeScore.png)
 
-- The player can see and follow along on the blabla
+- The player can see and follow along on which question they are on at the top right of the game area
 
 ![follow-question](assets/documentation/seeQuestion.png)
 
@@ -193,6 +193,13 @@ Browsers that the website has been tested on:
 
 ### Lighthouse
 
+Lighthouse on index.html page
+
+![lighthouse-index](assets/documentation/lighthouseIndex.png)
+
+Lighthouse on contact page
+
+![lighthouse](assets/documentation/lighthouse.png)
 
 ### Validators
 
