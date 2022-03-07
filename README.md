@@ -126,7 +126,11 @@ It is an HTML form without a method, instead, have I used JavaScript to change t
 
 ## Wireframes
 
-Wireframes were made for each of the pages, both for desktop and mobile.
+Wireframes were made using Balsamiq Wireframes
+
+- For phones
+
+![phone-wireframes](assets/documentation/phonewiref.png)
 
 ## Colors and Fonts
 

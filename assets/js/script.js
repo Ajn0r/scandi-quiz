@@ -1,5 +1,5 @@
 // ------- The basic JavaScript code structure for the quiz is from Web Dev Simplified YouTube, see credits in Readme.
-// -------
+// ------- 
 const quiz = document.getElementById('game-area');
 const startPage = document.getElementById('start');
 const startButton = document.getElementsByClassName('play-btn');
