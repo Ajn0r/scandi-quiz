@@ -148,7 +148,16 @@ All buttons on the page change color if the player hover over them.
 
 #### Game section
 
--  The Game page is where the user can play the quiz game
+-  The Game page is where the user can play the quiz game.
+At the top of the game area, the player can follow along on how they are doing, with a score tracker to the left, to the top right the number of questions answered and left is displayed.
+
+- Just under is where the questions are being displayed.
+
+- Then there are 4 answers to choose from, all in form of buttons, making the game easy to play on smaller devices.
+
+![game-area](assets/documentation/playingQuest.png)
+
+![game-area-answered-question](assets/documentation/playingAnswer.png)
 
 #### How to play section
 
@@ -161,10 +170,9 @@ All buttons on the page change color if the player hover over them.
 - The player can then scroll down on the information.
 Once the player is finished reading, they can decide if they'd like to play straight away or go back to the main menu by clicking on the logo.
 
-- A go back button has been added since this was done, so now the player can easily see how to get back to the menu.
+- A go back button has been added since this was done, so now the player can easily see how to get back to the menu, some of the text also has been altered.
 
 ![about-video](assets/documentation/about.gif)
-
 
 #### Contact page
 
