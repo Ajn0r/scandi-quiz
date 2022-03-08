@@ -1,5 +1,6 @@
 // ------- The basic JavaScript code structure for the quiz is from Web Dev Simplified YouTube, see credits in Readme.
-// ------- 
+// ------- Most of the code has then been altered and had added functionality to it by me.
+
 const quiz = document.getElementById('game-area');
 const startPage = document.getElementById('start');
 const startButton = document.getElementsByClassName('play-btn');
@@ -123,7 +124,7 @@ function finishedGame() {
     if (score > 7) {
         resultEvaluation.innerHTML = `
         <p>Whooow! That's some awesome scores there, you must be a true Scandi!</p>`;
-    } else if (score > 5) {
+    } else if (score > 4) {
         resultEvaluation.innerHTML = `
         <p>Not to shabby! You know a thing or two about Scandinavia!</p>`;
     } else {
