@@ -128,7 +128,8 @@ function finishedGame() {
 
     if (score > 7) {
         resultEvaluation.innerHTML = `
-        <p>Whooow! That's some awesome scores there, you must be a true Scandi!</p>`;
+        <h3>Whooow!</h3>
+        <p>That's some awesome scores there, 'Full pott' as they say in Sweden.<br>You must be a true Scandi!</p>`;
     } else if (score > 4) {
         resultEvaluation.innerHTML = `
         <p>Not to shabby! You know a thing or two about Scandinavia!</p>`;
