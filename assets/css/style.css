@@ -119,7 +119,7 @@ body {
 /* ------------ Styles for choosen answers ----------- */
 
 .selected {
-    border: 4px solid #1A2B38;
+    border: 7px solid #1A2B38;
 }
 
 .correct {
