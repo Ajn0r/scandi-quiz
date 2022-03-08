@@ -153,11 +153,27 @@ At the top of the game area, the player can follow along on how they are doing, 
 
 - Just under is where the questions are being displayed.
 
-- Then there are 4 answers to choose from, all in form of buttons, making the game easy to play on smaller devices.
+- Then there are four answers to choose from, all in the form of buttons, making the game easy to play on smaller devices.
 
 ![game-area](assets/documentation/playingQuest.png)
 
+- Once the player has chosen their answer, all buttons will change color, red if incorrect and green if correct.
+
+- The answer that the player chooses will get a border around it.
+
+- The next button that allows the player to continue to the next question will display at the bottom of the game area.
+
+- There are eight questions the player has to answer to finish the quiz.
+
 ![game-area-answered-question](assets/documentation/playingAnswer.png)
+
+#### Finished game section
+
+- The finished game section is where the player ends up when finished with all of the eight questions.
+- The first sentence 'Hurra' means Hurray in Swedish, congratulating the player for finishing the quiz. Under that, the total score achieved is displayed.
+- Depending on what score the player gets, they get a short message at the bottom, before the buttons 'play again' or go 'back to the menu' are displayed.
+
+![finished-game-section](assets/documentation/finishedGame.png)
 
 #### How to play section
 
