@@ -120,11 +120,16 @@ The project includes several features:
 - One contact form
 - A scorekeeping function
 - A function keeping track of which question the user is on.
+- All buttons have a hover effect, making it visible clear to the player which button they are about to press.
 
 ### Structure
 
 - The game consists of an of total 2 different html pages, with several sections on the index.html page.
-- The sections are then hidden or shown with the help from JavaScript, adding and removing classes.
+- The index.html file holds the game and game area.
+The game is split up into sections, the sections are then hidden or shown with the help of JavaScript, adding and removing classes.
+- The contact page is on its own HTML file. 
+The form on the page has no method attribute, so it won't lead the user anywhere in reality. Instead, have I used JavaScript to change the inner HTML of the page when the user clicks on 'submit'.
+The player is then greeted with a 'Thank you' and the name they submitted in the name input and a note that the quiz master will get back to them in no time. 
 
 The sections and pages are laid out logically, making them easily navigated for the user.
 
