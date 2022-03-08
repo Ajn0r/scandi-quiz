@@ -74,18 +74,29 @@ The player can not go forward with the quiz if they have not chosen an answer, o
 
 #### First-time visitor perspective Fulfilment
 
-- A first-time player can easily find information about how to play by choosing the menu option "how to play".
+- [x] A first-time player can easily find information about how to play by choosing the menu option "how to play".
 There the player is provided with instructions, then invited to play the game by clicking on the button "Let's go!"
 
 ![howtoplayVideo](assets/documentation/ezgif.com-gif-maker.gif)
 
-- The player can see their score at the top of the game area.
+- [x] The player can see their score at the top of the game area.
 
 ![follow-score](assets/documentation/seeScore.png)
 
-- The player can see and follow along on which question they are on at the top right of the game area
+- [x] The player can see and follow along on which question they are on at the top right of the game area
 
 ![follow-question](assets/documentation/seeQuestion.png)
+
+- [x] Once the player has chosen their answer, the correct and incorrect answers will reveal themself by changing color, also an icon will appear to the left.
+The answer that the player chose will get a border, making it visually easy to see if it was correct or not.
+
+If the answer is correct
+
+![Correct-answer](assets/documentation/correctAnswer.png)
+
+If the answer is incorrect
+
+![Incorrect-answer](assets/documentation/wrongAnswer.png)
 
 #### From a returning visitors perspective
 
