@@ -105,11 +105,11 @@ If the answer is incorrect
 
 #### Returning visitor Fulfilment
 
-- [x] 
+- [x] The game has a minimum of 24 questions which are shuffled every time so that the player should have at least some new questions if played several times.
 
-- [x] 
+- [x] The player can send their feedback, question, or whatever they might have on their heart to the owner of the quiz by filling in the contact form and pressing "submit"
 
-
+![Getting-in-touch-gif](assets/documentation/gettingInTouch.gif)
 
 ## Features
 
