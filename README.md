@@ -105,6 +105,12 @@ If the answer is incorrect
 
 #### Returning visitor Fulfilment
 
+- [x] 
+
+- [x] 
+
+
+
 ## Features
 
 The project includes several features:
@@ -278,6 +284,7 @@ I have used:
 - GitHub for keeping the files, documents, and deployment of the site
 - W3 School
 - [GitHub Wiki TOC generator](https://ecotrust-canada.github.io/markdown-toc/) 
+- [EZGIF.com for converting video to gif](https://ezgif.com/)
 - Grammarly for grammar check
 - Code Institute course material
 - Code Institute Slack channel
