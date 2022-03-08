@@ -9,20 +9,24 @@ const howToPage = document.getElementById('about');
 const nextButton = document.getElementById('next-btn');
 const questionBox = document.getElementById('questions');
 const answersBox = document.getElementById('answers');
-document.getElementById('header-text').addEventListener('click', startOver);
-document.getElementById('how-to-btn').addEventListener('click', howToPlay);
-document.getElementById('contact-btn').addEventListener('click', goToContact);
 const endGamePage = document.getElementById('end-game');
-const goBackButton = document.getElementById('take-me-back').addEventListener('click', startOver);
+const goBackButton = document.getElementsByClassName('back-btn');
 
 let scoreTracker = document.getElementById('score-count');
 let questionCounter = document.getElementById('question-count');
 let score = 0;
 let shuffledQuestion, currentQuestionIndex;
 
-//Eventlistener to play button, both from first page and how to play page.
+document.getElementById('header-text').addEventListener('click', startOver);
+document.getElementById('how-to-btn').addEventListener('click', howToPlay);
+document.getElementById('contact-btn').addEventListener('click', goToContact);
+
+//Eventlistener to play and go back buttons.
 for (let playBtn of startButton) {
     playBtn.addEventListener('click', startQuiz);
+}
+for (let backBtn of goBackButton) {
+    backBtn.addEventListener('click', startOver);
 }
 
 nextButton.addEventListener('click', () => {
@@ -61,6 +65,7 @@ function showQuestion(question) {
         button.addEventListener('click', selectAnswer);
         answersBox.appendChild(button);
     });
+
 }
 
 function selectAnswer(e) {
@@ -148,10 +153,13 @@ function resetQuestion() {
  * Function that takes the player back to the first start 'page' when header is clicked
  */
 function startOver() {
-    mainGameSection.classList.remove('hide');
-    startPage.classList.remove('hide');
-    quiz.classList.add('hide');
-    endGamePage.classList.add('hide');
+    //Might not need this...
+    /* mainGameSection.classList.remove('hide');
+     startPage.classList.remove('hide');
+     quiz.classList.add('hide');
+     endGamePage.classList.add('hide');
+     howToPage.classList.add('hide');*/
+    window.location.href = "index.html";
 }
 /**
  * Function that takes the player to the How to play section, hiding all other sections.
