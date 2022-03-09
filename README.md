@@ -320,7 +320,7 @@ So that when the game area was larger than 100vh, the background image would end
 
 ![responsivness-issue](assets/documentation/responsiveproblemiphone.PNG)
 
-- This was solved by changing the height to min-height 100vh
+- This was solved by changing the height to min-height 100vh, also the header text has been changed since it was the one pushing the game area down in this example.
 
 ## Deployment
 
