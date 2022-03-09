@@ -5,41 +5,42 @@ The questions are about the Scandinavian countries, both geographically and some
 
 ![amiresponsive-image](assets/documentation/amirespnew.png)
 
-
 For the live game please click [here](https://ajn0r.github.io/scandi-quiz/index.html)
 
-  * [Who is the website for?](#who-is-the-website-for)
-  * [What does it do?](#what-does-it-do)
-  * [User Experience](#user-experience)
-    + [User Goals](#user-goals)
-    + [User stories](#user-stories)
-      - [From a first-time visitors perspective](#from-a-first-time-visitors-perspective)
-      - [First-time visitor perspective Fulfilment](#first-time-visitor-perspective-fulfilment)
-      - [From a returning visitors perspective](#from-a-returning-visitors-perspective)
-      - [Returning visitor Fulfilment](#returning-visitor-fulfilment)
-  * [Features](#features)
-    + [Structure](#structure)
-      - [First page / Home page](#first-page---home-page)
-      - [Game page](#game-page)
-      - [About page](#about-page)
-      - [Contact page](#contact-page)
-  * [Wireframes](#wireframes)
-  * [Color & Fonts](#colors-and-fonts)
-    + [Colors](#colors)
-    + [Fonts](#fonts)
-  * [Media](#media)
-  * [Features I would like to implement in the future](#features-i-would-like-to-implement-in-the-future)
-  * [Testing](#testing)
-    + [Browser testing](#browser-testing)
-      - [Issues](#issues)
-    + [Lighthouse](#lighthouse)
-    + [Validators](#validators)
-    + [Local testing](#local-testing)
-    + [Responsiveness](#responsiveness)
-      - [Issues discovered](#issues-discovered)
-  * [Deployment](#deployment)
-  * [Technologies and resources used](#technologies-and-resources-used)
-  * [Credits](#credits)
+- [Who is the website for?](#who-is-the-website-for)
+- [What does it do?](#what-does-it-do)
+- [User Experience](#user-experience)
+  * [User Goals](#user-goals)
+  * [User stories](#user-stories)
+    + [From a first-time visitors perspective](#from-a-first-time-visitors-perspective)
+    + [First-time visitor perspective Fulfilment](#first-time-visitor-perspective-fulfilment)
+    + [From a returning visitors perspective](#from-a-returning-visitors-perspective)
+    + [Returning visitor Fulfilment](#returning-visitor-fulfilment)
+- [Features](#features)
+  * [Structure](#structure)
+    + [Menu section](#menu-section)
+    + [Game section](#game-section)
+    + [Finished game section](#finished-game-section)
+    + [How to play section](#how-to-play-section)
+    + [Contact page](#contact-page)
+- [Wireframes](#wireframes)
+- [Colors and Fonts](#colors-and-fonts)
+  * [Colors](#colors)
+  * [Fonts](#fonts)
+- [Questions](#questions)
+- [Features I would like to implement in the future](#features-i-would-like-to-implement-in-the-future)
+- [Testing](#testing)
+  * [Browser testing](#browser-testing)
+    + [Issues](#issues)
+  * [Lighthouse](#lighthouse)
+  * [Validators](#validators)
+  * [Bugs](#bugs)
+  * [Responsiveness](#responsiveness)
+    + [Issues discovered](#issues-discovered)
+- [Deployment](#deployment)
+- [Technologies and resources used](#technologies-and-resources-used)
+- [Credits](#credits)
+
 
 ## Who is the website for?
   
@@ -109,6 +110,8 @@ If the answer is incorrect
 - [x] The player can send their feedback, question, or whatever they might have on their heart to the owner of the quiz by filling in the contact form and pressing "submit"
 
 ![Getting-in-touch-gif](assets/documentation/gettingInTouch.gif)
+
+[Back to the top](#the-scandi-quiz)
 
 ## Features
 
@@ -237,6 +240,8 @@ I have found my fonts on Google Font, the ones that I finally decided to use are
 -	Displaying images as part of a question
 - An option to read some fun facts on every question, like a pop-up box, that opens if the player click a 'fun-fact' button
 
+[Back to the top](#the-scandi-quiz)
+
 ## Testing
 
 ### Browser testing
@@ -300,7 +305,9 @@ The CSS passed without any errors on the first attempt.
 
 ![bug](assets/documentation/scoreError.png)
 
-- After a conversation with my mentor, I removed the event listener after the buttons had had their classes added to them in JavaScript, and the 'bug' was solved!
+- After a conversation with my mentor, I removed the event listener in the "selectAnswer" function, and the 'bug' was solved!
+
+![remove-eventListener](assets/documentation/removeEvent.png)
 
 - Now the player can't cheat, at least not by clicking the right answer many times.
 
