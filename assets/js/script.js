@@ -1,5 +1,8 @@
-// ------- The basic JavaScript code structure for the quiz is from Web Dev Simplified YouTube, see credits in Readme.
-// ------- Most of the code has then been altered and had added functionality to it by me.
+// The basic JavaScript code structure
+// for the quiz is from Web Dev Simplified YouTube,
+// see credits in Readme.
+// Most of the code has then been
+// altered and had added functionality to it by me.
 
 const quiz = document.getElementById('game-area');
 const startPage = document.getElementById('start');
@@ -10,13 +13,14 @@ const nextButton = document.getElementById('next-btn');
 const questionBox = document.getElementById('questions');
 const answersBox = document.getElementById('answers');
 const endGamePage = document.getElementById('end-game');
-const goBackButton = document.getElementsByClassName('back-btn');
 
 let scoreTracker = document.getElementById('score-count');
 let questionCounter = document.getElementById('question-count');
 let score = 0;
 let shuffledQuestion, currentQuestionIndex;
 
+document.getElementById('back-menu').addEventListener('click', startOver);
+document.getElementById('take-me-back').addEventListener('click', startOver);
 document.getElementById('header-text').addEventListener('click', startOver);
 document.getElementById('how-to-btn').addEventListener('click', howToPlay);
 document.getElementById('contact-btn').addEventListener('click', goToContact);
@@ -24,9 +28,6 @@ document.getElementById('contact-btn').addEventListener('click', goToContact);
 //Eventlistener to play and go back buttons.
 for (let playBtn of startButton) {
     playBtn.addEventListener('click', startQuiz);
-}
-for (let backBtn of goBackButton) {
-    backBtn.addEventListener('click', startOver);
 }
 
 nextButton.addEventListener('click', () => {
