@@ -69,7 +69,6 @@ function showQuestion(question) {
         answersBox.appendChild(button);
 
     });
-
 }
 
 function selectAnswer(e) {
@@ -154,6 +153,12 @@ function finishedGame() {
         <p>That's some awesome scores there,
          'Full pott' as they say in Sweden.<br>
          You must be a true Scandi!</p>`;
+    } else if (score > 6) {
+        resultEvaluation.innerHTML = `
+        <h3>Well done!</h3> 
+        <p>So close to getting a 'full pott'!</p>
+        <p>But 'nära skjuter ingen hare' (close doesn't shoot the bunny)</p>
+        <p></p>I'm sure you'll nail it next time!</h3>`;
     } else if (score > 4) {
         resultEvaluation.innerHTML = `
         <p>Not to shabby! You know a thing
@@ -161,7 +166,7 @@ function finishedGame() {
     } else {
         resultEvaluation.innerHTML = `
         <p>Awww! Don't be sad, try again,
-         maybe the questions will be easier this time.</p>`;
+         maybe the questions will be easier next time.</p>`;
     }
     scoreTracker.innerHTML = 0;
     questionCounter.innerHTML = 0;
