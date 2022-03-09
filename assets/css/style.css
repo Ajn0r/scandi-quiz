@@ -1,6 +1,9 @@
 /* ----------- FONTS -----------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto+Serif&display=swap');
+
+/* ------------ Default and background ------------ */
+
 body {
     box-sizing: border-box;
     padding: 0 0.5rem;
