@@ -228,7 +228,9 @@ I have found my fonts on Google Font, the ones that I finally decided to use are
 -	«Lobster Two» for the header text
 -	«Roboto Sans» for all other text.
 
-## Media
+## Questions
+
+- All questions are written by me, most from my head, with some I had to google the answer for.
 
 ## Features I would like to implement in the future
 -	A high score feature.
@@ -247,6 +249,8 @@ Browsers that the website has been tested on:
 - Firefox
 
 #### Issues
+
+
 
 ### Lighthouse
 
@@ -274,11 +278,18 @@ I removed it and the code then passed without any more errors.
 
 The CSS passed without any errors on the first attempt.
 
-![]
+![Css-validated](assets/documentation/cssValidated.png)
 
-### Local testing
+### Bugs 
+
+- 
+
+![bug](assets/documentation/scoreError.png)
+
+![Fixed-bug](assets/documentation/fixedBug.gif)
 
 ### Responsiveness
+
 
 
 #### Issues discovered
