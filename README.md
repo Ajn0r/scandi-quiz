@@ -294,7 +294,10 @@ The CSS passed without any errors on the first attempt.
 
 #### Issues discovered
 
+- One issue with the responsiveness was that I had set the body height to 100vh, and the game area to fit-content. 
+So that when the game area was larger than 100vh, the background image would end before the game area.
 
+![responsivness-issue](assets/documentation/responsiveproblemiphone.PNG)
 
 ## Deployment
 
