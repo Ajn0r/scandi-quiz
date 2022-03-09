@@ -75,15 +75,18 @@ function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
     selectedButton.classList.add('selected');
+
     if (correct) {
         score++;
         scoreTracker.innerHTML = score;
     }
+
     Array.from(answersBox.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
+        button.removeEventListener('click', selectAnswer);
     });
     nextButton.classList.remove('hide');
-    selectedButton.removeEventListener('click', selectAnswer);
+
 }
 /**
  * Function that adds the correct and incorrect 
