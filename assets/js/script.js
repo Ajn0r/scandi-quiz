@@ -35,7 +35,9 @@ nextButton.addEventListener('click', () => {
 });
 
 /**
- * Function for starting the quiz, adding the hide class to first section and displaying quiz section.
+ * Function for starting the quiz, 
+ * adding the hide class to first section 
+ * and displaying quiz section.
  */
 function startQuiz() {
     mainGameSection.classList.remove('hide');
@@ -64,6 +66,7 @@ function showQuestion(question) {
         }
         button.addEventListener('click', selectAnswer);
         answersBox.appendChild(button);
+
     });
 
 }
@@ -80,9 +83,11 @@ function selectAnswer(e) {
         setStatusClass(button, button.dataset.correct);
     });
     nextButton.classList.remove('hide');
+    selectedButton.removeEventListener('click', selectAnswer);
 }
 /**
- * Function that adds the correct and incorrect class to answer buttons, to change color and add icon.
+ * Function that adds the correct and incorrect 
+ * class to answer buttons, to change color and add icon.
  */
 function setStatusClass(element, correct) {
     clearStatusClass(element);
@@ -99,14 +104,16 @@ function setStatusClass(element, correct) {
     }
 }
 /**
- * Removes the correct and wrong class from answer buttons.
+ * Removes the correct and wrong class 
+ * from answer buttons.
  */
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
 /**
- * Function that displays the next question, until it reaches question 8.
+ * Function that displays the next question,
+ * until it reaches question 8.
  */
 function displayNextQuestion() {
     if (currentQuestionIndex <= 7) {
@@ -117,7 +124,18 @@ function displayNextQuestion() {
     }
 }
 /**
- * Function that displays the finished game content, and letting the player know how they got on.
+ * Function that reset the question, 
+ * and hiding the next button.
+ */
+function resetQuestion() {
+    nextButton.classList.add('hide');
+    while (answersBox.firstChild) {
+        answersBox.removeChild(answersBox.firstChild);
+    }
+}
+/**
+ * Function that displays the finished game content,
+ * and letting the player know how they got on.
  */
 function finishedGame() {
     let endScore = document.getElementById('end-score');
@@ -142,28 +160,15 @@ function finishedGame() {
     score = 0;
 }
 /**
- * Function that reset the question, and hiding the next button.
- */
-function resetQuestion() {
-    nextButton.classList.add('hide');
-    while (answersBox.firstChild) {
-        answersBox.removeChild(answersBox.firstChild);
-    }
-}
-/**
- * Function that takes the player back to the first start 'page' when header is clicked
+ * Function that takes the player back to 
+ * the first start 'page' when header is clicked
  */
 function startOver() {
-    //Might not need this...
-    /* mainGameSection.classList.remove('hide');
-     startPage.classList.remove('hide');
-     quiz.classList.add('hide');
-     endGamePage.classList.add('hide');
-     howToPage.classList.add('hide');*/
     window.location.href = "index.html";
 }
 /**
- * Function that takes the player to the How to play section, hiding all other sections.
+ * Function that takes the player to the 
+ * How to play section, hiding all other sections.
  */
 function howToPlay() {
     mainGameSection.classList.add('hide');
