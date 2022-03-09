@@ -236,6 +236,7 @@ I have found my fonts on Google Font, the ones that I finally decided to use are
 -	A high score feature.
 -	More questions
 -	Displaying images as part of a question
+- An option to read some fun facts on every question, like a pop-up box, that opens if the player click a 'fun-fact' button
 
 ## Testing
 
@@ -280,16 +281,28 @@ The CSS passed without any errors on the first attempt.
 
 ![Css-validated](assets/documentation/cssValidated.png)
 
-### Bugs 
-
 - 
 
+### Bugs 
+
+- One bug that followed me all the way was that it was possible to continue to click on the answer buttons and collect infinitive points, making it very easy to cheat.
+
+- It also added the icon every time the button was clicked, making it not very esthetically pleasing.
+
 ![bug](assets/documentation/scoreError.png)
+
+- After a conversation with my mentor, I removed the event listener after the buttons had had their classes added to them in JavaScript, and the 'bug' was solved!
+
+- Now the player can't cheat, at least not by clicking the right answer many times.
 
 ![Fixed-bug](assets/documentation/fixedBug.gif)
 
 ### Responsiveness
 
+- The game is designed to work well on all devices.
+One aspect of the design is that it should be easily played on all smaller devices with the answers all being in the form of buttons.
+
+- The size of the game area is responsive to the size of the screen, with a max-width set to 40 rem, since I didn't think it would look good any wider than that.
 
 
 #### Issues discovered
@@ -298,6 +311,8 @@ The CSS passed without any errors on the first attempt.
 So that when the game area was larger than 100vh, the background image would end before the game area.
 
 ![responsivness-issue](assets/documentation/responsiveproblemiphone.PNG)
+
+- This was solved by changing the height to min-height 100vh
 
 ## Deployment
 
@@ -337,7 +352,7 @@ I have used:
 ## Credits
 - I have used 
 Web Dev Simplified YouTube video «Build A Quiz App with JavaScript» for the basic setup for the quiz and then altered and elaborated most of the code.
- 
+
 [YouTube video](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1s)
 
 - Thanks to my Mentor Spencer Barriball, especially for directing me in the right direction when it came to solving the bug with the score counter.
