@@ -281,7 +281,11 @@ The CSS passed without any errors on the first attempt.
 
 ![Css-validated](assets/documentation/cssValidated.png)
 
-- 
+- While validating the javascript, some warnings were issued, mainly on comments being too long.
+- Other warnings were about using a for loop for adding an event listener to buttons that reoccurred, such as the go back and play/play again buttons.
+- Since I had multiple buttons that did the same thing, I thought it was a good idea to loop through them to add an event listener to each of them. Apparently, the js validator didn't agree, so I did do one for each of the go-back buttons but kept the one for play buttons.
+
+![js-validator](assets/documentation/jsValidator.png)
 
 ### Bugs 
 
