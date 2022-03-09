@@ -336,5 +336,8 @@ I have used:
 
 ## Credits
 - I have used 
-Web Dev Simplified YouTube video «Build A Quiz App with JavaScript» for the basic setup for the quiz.
-Link to video here
+Web Dev Simplified YouTube video «Build A Quiz App with JavaScript» for the basic setup for the quiz and then altered and elaborated most of the code.
+ 
+[YouTube video](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1s)
+
+- Thanks to my Mentor Spencer Barriball, especially for directing me in the right direction when it came to solving the bug with the score counter.
