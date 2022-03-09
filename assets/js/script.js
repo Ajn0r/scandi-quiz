@@ -35,8 +35,8 @@ nextButton.addEventListener('click', () => {
 });
 
 /**
- * Function for starting the quiz, 
- * adding the hide class to first section 
+ * Function for starting the quiz,
+ * adding the hide class to first section
  * and displaying quiz section.
  */
 function startQuiz() {
@@ -44,7 +44,7 @@ function startQuiz() {
     startPage.classList.add('hide');
     howToPage.classList.add('hide');
     endGamePage.classList.add('hide');
-    shuffledQuestion = questions.sort(() => Math.random() - .5);
+    shuffledQuestion = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     quiz.classList.remove('hide');
     displayNextQuestion();
@@ -89,7 +89,7 @@ function selectAnswer(e) {
 
 }
 /**
- * Function that adds the correct and incorrect 
+ * Function that adds the correct and incorrect
  * class to answer buttons, to change color and add icon.
  */
 function setStatusClass(element, correct) {
@@ -107,7 +107,7 @@ function setStatusClass(element, correct) {
     }
 }
 /**
- * Removes the correct and wrong class 
+ * Removes the correct and wrong class
  * from answer buttons.
  */
 function clearStatusClass(element) {
@@ -127,7 +127,7 @@ function displayNextQuestion() {
     }
 }
 /**
- * Function that reset the question, 
+ * Function that reset the question,
  * and hiding the next button.
  */
 function resetQuestion() {
@@ -150,27 +150,31 @@ function finishedGame() {
     if (score > 7) {
         resultEvaluation.innerHTML = `
         <h3>Whooow!</h3>
-        <p>That's some awesome scores there, 'Full pott' as they say in Sweden.<br>You must be a true Scandi!</p>`;
+        <p>That's some awesome scores there,
+         'Full pott' as they say in Sweden.<br>
+         You must be a true Scandi!</p>`;
     } else if (score > 4) {
         resultEvaluation.innerHTML = `
-        <p>Not to shabby! You know a thing or two about Scandinavia!</p>`;
+        <p>Not to shabby! You know a thing
+         or two about Scandinavia!</p>`;
     } else {
         resultEvaluation.innerHTML = `
-        <p>Awww! Don't be sad, try again, maybe the questions will be easier this time.</p>`;
+        <p>Awww! Don't be sad, try again,
+         maybe the questions will be easier this time.</p>`;
     }
     scoreTracker.innerHTML = 0;
     questionCounter.innerHTML = 0;
     score = 0;
 }
 /**
- * Function that takes the player back to 
+ * Function that takes the player back to
  * the first start 'page' when header is clicked
  */
 function startOver() {
     window.location.href = "index.html";
 }
 /**
- * Function that takes the player to the 
+ * Function that takes the player to the
  * How to play section, hiding all other sections.
  */
 function howToPlay() {
