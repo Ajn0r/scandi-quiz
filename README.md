@@ -8,7 +8,6 @@ The questions are about the Scandinavian countries, both geographically and some
 
 For the live game please click [here](https://ajn0r.github.io/scandi-quiz/index.html)
 
-Table of content.
   * [Who is the website for?](#who-is-the-website-for)
   * [What does it do?](#what-does-it-do)
   * [User Experience](#user-experience)
@@ -249,9 +248,11 @@ Browsers that the website has been tested on:
 - Safari
 - Firefox
 
+- The game has also been tested on both Samsung phones and different iPhones (8+, 11, and 12) with pleasing results. 
+
 #### Issues
 
-
+- It had some issues with responsiveness on small screens, which now have been solved, see [Responsiveness](#responsiveness)
 
 ### Lighthouse
 
@@ -364,3 +365,5 @@ Web Dev Simplified YouTube video «Build A Quiz App with JavaScript» for the ba
 [YouTube video](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1s)
 
 - Thanks to my Mentor Spencer Barriball, especially for directing me in the right direction when it came to solving the bug with the score counter.
+
+[Back to the top](#the-scandi-quiz)
