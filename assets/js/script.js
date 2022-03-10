@@ -1,6 +1,5 @@
 // The basic JavaScript code structure
-// for the quiz is from Web Dev Simplified YouTube,
-// see credits in Readme.
+// for the quiz is from Web Dev Simplified YouTube.
 // Most of the code has then been
 // altered and had added functionality to it by me.
 
@@ -70,7 +69,13 @@ function showQuestion(question) {
 
     });
 }
-
+/**
+ * Function that targets the answer chosen
+ * and adds a point to the score tracker
+ * if the players answer is correct.
+ * Displays the next button once an answer
+ * had been clicked.
+ */
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
