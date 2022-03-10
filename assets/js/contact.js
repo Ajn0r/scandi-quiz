@@ -7,7 +7,7 @@ function reciveContact(e) {
     e.preventDefault();
     let username = document.getElementById('name').value;
     contactPage.innerHTML = `
-    <h2>Thank you ${username} for reaching out!</h2>
+    <h2>Thank you, ${username} for reaching out!</h2>
     <p>We'll get back to you in no time!</p>
     <button class="btn btn-hover back-btn go-back-btn"
     id="go-back-link">Go back</button>`;
